@@ -191,7 +191,7 @@ teclado que vienen por defecto.
 
 | Atajo                | Acción                              |
 | -------------------- | ----------------------------------- |
-| **mod + enter**      | abrir xterm                         |
+| **mod + enter**      | abrir alacrity                      |
 | **mod + k**          | ventana siguiente                   |
 | **mod + j**          | ventana anterior                    |
 | **mod + w**          | cerrar ventana                      |
@@ -808,7 +808,7 @@ Estos son algunos atajos de teclado comunes a todos mis gestores de ventanas:
 | **mod + shift + [1-9]** | mandar ventana al espacio de trabajo N (1-9) |
 | **mod + punto**         | enfocar siguiente monitor                    |
 | **mod + coma**          | enfocar monitor previo                       |
-| **mod + w**             | cerrar ventana                               |
+| **mod + c**             | cerrar ventana                               |
 | **mod + ctrl + r**      | reiniciar gestor de ventana                  |
 | **mod + ctrl + q**      | cerrar sesión                                |
 
