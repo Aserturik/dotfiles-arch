@@ -126,4 +126,6 @@ configuration {
 	me-accept-custom: "Control+MouseDPrimary";
 }
 
-@theme "Arc-Dark-Mantis"
+//@theme "Arc-Dark-Mantis"
+//@theme "/usr/share/rofi/themes/Arc-Dark-Havelock.rasi"
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
