@@ -364,12 +364,12 @@
     </keybind>
     <keybind key="XF86MonBrightnessUp">
       <action name="Execute">
-        <command>xbacklight +10</command>
+        <command>brightnessctl s +20</command>
       </action>
     </keybind>
     <keybind key="XF86MonBrightnessDown">
       <action name="Execute">
-        <command>xbacklight -10</command>
+        <command>brightnessctl s 20-c</command>
       </action>
     </keybind>
     <!-- Scrot -->
@@ -643,12 +643,12 @@
     </keybind>
     <keybind key="XF86MonBrightnessDown">
       <action name="Execute">
-        <command>light -U 10</command>
+        <command>brightnessctl s 20-</command>
       </action>
     </keybind>
     <keybind key="XF86MonBrightnessUp">
       <action name="Execute">
-        <command>light -A 10</command>
+        <command>brightnessctl s +20</command>
       </action>
     </keybind>
     <keybind key="W-F2">
