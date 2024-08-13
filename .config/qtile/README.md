@@ -11,30 +11,22 @@
 Install Qtile and dependencies:
 
 ```
-sudo pacman -S qtile pacman-contrib
-yay -S nerd-fonts-ubuntu-mono
+sudo pacman -S qtile qtile-extras pacman-contrib
 pip install psutil
 ```
 
 Clone this repository and copy my configs:
 
 ```bash
-git clone https://github.com/antoniosarosi/dotfiles.git
+git clone https://github.com/aserturik/dotfiles.git
 cp -r dotfiles/.config/qtile ~/.config
-```
-
-Test it with **[Xephyr](https://wiki.archlinux.org/index.php/Xephyr)**:
-
-```bash
-Xephyr -br -ac -noreset -screen 1280x720 :1 &
-DISPLAY=:1 qtile
 ```
 
 If the network widget doesn't work check ```./settings/widgets.py``` and look
 for this line, you should find it inside a list called *primary_widgets*:
 
 ```python
-# Change interface arg, use ip address to find which one you need
+# Change interface arg, use ip address to find which one you need (wlan0 in my case)
  widget.Net(**base(bg='color3'), interface='wlp2s0'),
 ```
 

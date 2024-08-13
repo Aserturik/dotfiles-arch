@@ -11,30 +11,22 @@
 Instala Qtile y las dependencias:
 
 ```bash
-sudo pacman -S qtile pacman-contrib
-yay -S nerd-fonts-ubuntu-mono
+sudo pacman -S qtile qtile-extras pacman-contrib
 pip install psutil
 ```
 
 Clona este repositorio y copia mis configuraciones:
 
 ```bash
-git clone https://github.com/antoniosarosi/dotfiles.git
+git clone https://github.com/aserturik/dotfiles.git
 cp -r dotfiles/.config/qtile ~/.config
-```
-
-Pruébalo con **[Xephyr](https://wiki.archlinux.org/index.php/Xephyr)**:
-
-```bash
-Xephyr -br -ac -noreset -screen 1280x720 :1 &
-DISPLAY=:1 qtile
 ```
 
 Si el icono de la red no funciona, abre  ```./settings/widgets.py``` y busca
 esta línea, debería estar dentro de una lista llamada *primary_widgets*:
 
 ```python
-# Cambia el argumento "interface", usa ip address para saber cuál poner
+# Cambia el argumento "interface", usa ip address para saber cuál poner (wlan0 en mi caso)
  widget.Net(**base(bg='color3'), interface='wlp2s0'),
 ```
 
